@@ -17,7 +17,7 @@ client.on('error', function(error) {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('./public'));
+app.use(express.static('.starter-code/public'));
 
 // REVIEW: This is a new proxy method which acts as a 'middle man' (middleware) for our request.
 function proxyGitHub(request, response) {
